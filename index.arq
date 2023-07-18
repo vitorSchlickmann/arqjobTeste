@@ -1,0 +1,65 @@
+
+se retParametro("Rescisões", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/RescisaoSQL");   
+fimse;
+se retParametro("Aposentados", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/AposentadoSQL");
+fimse;
+se retParametro("Cessacao Aposentados", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/cessacao_suspensaoAPOSENTASQL");
+fimse;
+se retParametro("Pensionistas", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/PensionistaSQL");
+fimse;
+se retParametro("Cessacao e suspenções Pensionista", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/cessacao_suspensao_acoesSQL");
+fimse;
+se retParametro("Movimentação de Pessoal", false, "CK:") == true
+    exeArqjoblet("300/Migração Betha Folha/MovPesSQL");
+fimse;
+se retParametro("Lançamentos de Eventos", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/LancamentoEventoSQL");
+fimse;
+se retParametro("Periodo Aquisitivo de Férias", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/PeriodoAquisitivoFeriasSQL");
+fimse;
+se retParametro("Periodo Aquisitivo de Décimo Terceiro", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/PeriodoAquisitivoDecimoSQL");
+fimse;
+se retParametro("Cálculo de Folha de Rescisão", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/CalculoFolhaRescisaoSQL");
+fimse;
+se retParametro("Cálculo de Folha Mensal", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/CalculoFolhaMensalSQL");
+fimse;
+se retParametro("Cálculo de Folha de Décimo Terceiro", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/CalculoFolhaDecimoTerceiroSQL");
+fimse;
+se retParametro("Cálculo de Folha de Férias", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/CalculoFolhaFeriasSQL");
+fimse;
+se retParametro("Concessão de Férias", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/PeriodoAquisitivoFeriasConcessaoSQL");
+fimse;
+se retParametro("Concessão de Décimo Terceiro", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/PeriodoAquisitivoDecimoConcessaoSQL");
+fimse;
+se retParametro("Movimentações de Folhas", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/FolhaSQL");
+fimse;
+se retParametro("Configuração da DIRF", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/ConfiguracaoDirfSQL");
+fimse;
+se retParametro("Controle de envio do Esocial", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/EsocialControleEnvioSQL");
+fimse;
+retParametro("Arqjob Opcional",false,"");
+se retParametro("Atualiza Eventos", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/HistoricoEventosSQL");
+fimse;
+se retParametro("Busca contas existentes", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/ContasBancariasExistentesBUSCA");
+fimse;
+se retParametro("Atualiza Pessoas Físicas", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/HistoricoPessoaSQL");
+fimse;
