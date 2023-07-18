@@ -5,6 +5,9 @@ fimse;
 se retParametro("Aposentados", false, "CK:") == true 
     exeArqjoblet("300/Migração Betha Folha/AposentadoSQL");
 fimse;
+se retParametro("AposentadosTeste", false, "CK:") == true 
+    exeArqjoblet("300/Migração Betha Folha/AposentadoSQL");
+fimse;
 se retParametro("Cessacao Aposentados", false, "CK:") == true 
     exeArqjoblet("300/Migração Betha Folha/cessacao_suspensaoAPOSENTASQL");
 fimse;
